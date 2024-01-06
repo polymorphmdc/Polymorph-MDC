@@ -9,6 +9,15 @@
   <meta name="robots" content="follow, index">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
+  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+ <script>smoothscroll.polyfill();
+
+function scrollToElement(element) {
+    element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+} </script>
 </head>
 <body class="scroll-smooth flex flex-col font-Lato min-h-svh overflow-y-auto   px-5  bg-gradient-to-tr from-[#0e0e0f] to-[#20232c] ">
     <div class="flex flex-wrap select-none place-content-evenly sm:place-content-center sm:flex-col border-b-2 mt-5     border-zinc-800 ">
